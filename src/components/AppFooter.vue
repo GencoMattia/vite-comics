@@ -138,6 +138,14 @@ export default {
                     active: false
                 },
             ],
+
+            SocialList: [
+                {
+                    id: 1,
+                    name: "Facebook",
+                    icon: ""
+                }
+            ],
         }
     }
 }
@@ -193,10 +201,26 @@ export default {
                     <img src="../assets/img/dc-logo-bg.png" alt="footer-logo">
                 </div>
             </section>
-            <nav class="social-links">
-
-            </nav>
         </div>
+        <section class="footer-socials">
+            <div class="container">
+                <nav class="social-links">
+                    <button class="sign-up">
+                        Sign Up Now!
+                    </button>
+                    <div class="socials-list">
+                        <h2>
+                            Follow Us
+                        </h2>
+                        <ul>
+                            <li>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
     </Footer>
 </template>
 
@@ -208,42 +232,61 @@ export default {
         overflow: hidden;
     }
 
-    .logo-links {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 15rem;
-        color: #959595;
-        
-        .site-links {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        h2 {
-            color: white;
-            text-transform: uppercase;
-        }
-    }
-
     .container{
         display: flex;
         flex-direction: column;
 
+        .logo-links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 15rem;
+            color: #959595;
+            
+            .site-links {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+    
+            h2 {
+                color: white;
+                text-transform: uppercase;
+            }
+    
+            .footer-logo {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+    
+                img {
+                    height: 120%;
+                }
+            }
+        }
+
         .footer-logo {
             width: 50%;
+            overflow: hidden;
         }
     }
 
-    .footer-logo {
-        display: flex;
-        justify-content: end;
-        align-items: center;
+    .footer-socials {
+        width: 100%;
+        background-color: #303030;
 
-        img {
-            height: 120%;
+        .container {
+            height: 4rem;
+
+            .social-links {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
+
+
 </style>
