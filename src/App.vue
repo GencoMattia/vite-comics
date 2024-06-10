@@ -27,6 +27,8 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./styles/general.scss" as *;
+
   * {
     margin: 0;
     padding: 0;
