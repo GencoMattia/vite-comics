@@ -143,27 +143,27 @@ export default {
                 {
                     id: 1,
                     name: "Facebook",
-                    icon: "footer-facebook"
+                    icon: "../assets/img/footer-facebook"
                 },
                 {
                     id: 2,
                     name: "Twitter",
-                    icon: "footer-twitter"
+                    icon: "../assets/img/footer-twitter"
                 },
                 {
                     id: 3,
                     name: "YouTube",
-                    icon: "footer-youtube"
+                    icon: "../assets/img/footer-youtube"
                 },
                 {
                     id: 4,
                     name: "Pinterest",
-                    icon: "footer-pinterest"
+                    icon: "../assets/img/footer-pinterest"
                 },
                 {
                     id: 5,
                     name: "Periscope",
-                    icon: "footer-periscope"
+                    icon: "../assets/img/footer-periscope"
                 },
             ],
         }
@@ -233,8 +233,8 @@ export default {
                             Follow Us
                         </h2>
                         <ul>
-                            <li>
-
+                            <li v-for="link in SocialList" key="id">
+                                <img :src="link.icon + '.png'" :alt="link.name + '-logo'">
                             </li>
                         </ul>
                     </div>
@@ -304,6 +304,14 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
+                .socials-list {
+                    display: flex;
+
+                    ul {
+                        display: flex;
+                    }
+                }
             }
         }
     }
