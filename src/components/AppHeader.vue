@@ -61,19 +61,40 @@ export default {
 
 <template>
     <header>
-        <section class="logo">
-            <img src="../assets/img/dc-logo.png" alt="header-logo">
-        </section>
-        <nav class="navbar">
-            <ul>
-                <li v-for="link in navbarLinks" key="id">
-                    {{ link.title.toUpperCase() }}
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <section class="logo">
+                <img src="../assets/img/dc-logo.png" alt="header-logo">
+            </section>
+            <nav class="navbar">
+                <ul>
+                    <li v-for="link in navbarLinks" key="id">
+                        {{ link.title.toUpperCase() }}
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+    header {
+        width: 100%;
+        
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+    }
 </style>
