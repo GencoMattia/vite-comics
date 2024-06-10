@@ -307,12 +307,25 @@ export default {
                 justify-content: space-between;
                 align-items: center;
 
+                button {
+                    background-color: transparent;
+                    border: $footer-blue solid 2px;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: .5rem 1rem;
+
+                    &:hover {
+                        background-color: rgba($color: #ffffff, $alpha: .1);
+                    }
+                }
+
                 .socials-list {
                     display: flex;
                     color: #959595;
 
                     h2 {
                         color: $footer-blue;
+                        text-transform: uppercase;
                     }
 
                     ul {
