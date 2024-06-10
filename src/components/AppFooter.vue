@@ -143,8 +143,28 @@ export default {
                 {
                     id: 1,
                     name: "Facebook",
-                    icon: ""
-                }
+                    icon: "footer-facebook"
+                },
+                {
+                    id: 2,
+                    name: "Twitter",
+                    icon: "footer-twitter"
+                },
+                {
+                    id: 3,
+                    name: "YouTube",
+                    icon: "footer-youtube"
+                },
+                {
+                    id: 4,
+                    name: "Pinterest",
+                    icon: "footer-pinterest"
+                },
+                {
+                    id: 5,
+                    name: "Periscope",
+                    icon: "footer-periscope"
+                },
             ],
         }
     }
