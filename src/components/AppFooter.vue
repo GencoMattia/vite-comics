@@ -1,17 +1,21 @@
 <script>
+export default {
     data() {
         return {
 
         }
     }
+}
 </script>
 
 <template>
-    <footer>
+    <Footer>
         <h1>
             Io sono un Footer
         </h1>
-    </footer>
+    </Footer>
 </template>
 
 <style scoped>
+
+</style>
