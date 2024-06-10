@@ -205,12 +205,27 @@ export default {
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
     }
 
     .logo-links {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         height: 15rem;
-        width: 50%;
+        color: #959595;
+        
+        .site-links {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            color: white;
+            text-transform: uppercase;
+        }
     }
 
     .container{
@@ -222,7 +237,13 @@ export default {
         }
     }
 
-    h2 {
-        text-transform: uppercase;
+    .footer-logo {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        img {
+            height: 120%;
+        }
     }
 </style>
