@@ -244,7 +244,9 @@ export default {
     </Footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
     footer {
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
@@ -307,6 +309,11 @@ export default {
 
                 .socials-list {
                     display: flex;
+                    color: #959595;
+
+                    h2 {
+                        color: $footer-blue;
+                    }
 
                     ul {
                         display: flex;
