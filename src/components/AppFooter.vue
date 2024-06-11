@@ -188,7 +188,9 @@ export default {
                         </h2>
                         <ul>
                             <li v-for="link in DcComicsList" key="id">
-                                {{ link.title }}
+                                <a href="#">
+                                    {{ link.title }}
+                                </a>                                
                             </li>
                         </ul>
                     </div>
@@ -198,7 +200,9 @@ export default {
                         </h2>
                         <ul>
                             <li v-for="link in ShopList" key="id">
-                                {{ link.title }}
+                                <a href="#">
+                                    {{ link.title }}
+                                </a>      
                             </li>
                         </ul>
                     </div>
@@ -208,7 +212,9 @@ export default {
                         </h2>
                         <ul>
                             <li v-for="link in DcList" key="id">
-                                {{ link.title }}
+                                <a href="#">
+                                    {{ link.title }}
+                                </a>      
                             </li>
                         </ul>
                     </div>
@@ -218,7 +224,9 @@ export default {
                         </h2>
                         <ul>
                             <li v-for="link in SiteList" key="id">
-                                {{ link.title }}
+                                <a href="#">
+                                    {{ link.title }}
+                                </a>      
                             </li>
                         </ul>
                     </div>
@@ -288,6 +296,11 @@ export default {
                 li {
                     margin-bottom: .2rem;
                     font-size: .8rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #959595;
+                    }
                 }
             }
     
