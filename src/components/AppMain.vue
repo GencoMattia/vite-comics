@@ -32,7 +32,7 @@ export default {
         
         .container {
             width: 1200px;
-            height: 7rem;
+            // height: 7rem;
             @include flex-centered()
         }
     }

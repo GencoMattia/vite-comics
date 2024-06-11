@@ -75,8 +75,7 @@ export default {
                     "series": "Catwoman",
                     "type": "graphic novel",
                 },
-            ]
-        
+            ],
         };
     }
 };
@@ -84,12 +83,42 @@ export default {
 
 <template>
     <section class="content">
-        <h2>
-            --> Content goes here <--
-        </h2>
+        <ul class="article-list">
+            <li v-for="(article, index) in articlesList" key="index">
+                <article class="comics-item">
+                    <img :src="article.thumb" :alt="article.thumb + '-img'">
+                    <p>
+                        {{ article.series }}
+                    </p>
+                </article>
+            </li>
+        </ul>
     </section>
 </template>
 
 <style scoped lang="scss">
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
+        li{
+            width: calc(100% / 7);
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+
+            article{
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 90%;
+                    object-fit: fill;
+                }
+
+                p {
+                    
+                }
+            }
+        }
+    }
 </style>
