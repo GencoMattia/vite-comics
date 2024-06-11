@@ -97,6 +97,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+    section {
+        padding: 2rem 2rem 0 2rem;
+    }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -111,12 +115,9 @@ export default {
                 height: 100%;
                 img {
                     width: 100%;
-                    height: 90%;
-                    object-fit: fill;
-                }
-
-                p {
-                    
+                    height: 170px;
+                    object-fit: cover;
+                    margin-bottom: .5rem;
                 }
             }
         }
