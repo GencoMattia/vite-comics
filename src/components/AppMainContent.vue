@@ -4,7 +4,7 @@ import MainContentArticle from "./MainContentArticle.vue";
 
 export default {
     components: { 
-        MainContentArticle 
+        MainContentArticle,
     },
 
     data() {
