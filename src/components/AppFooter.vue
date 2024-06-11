@@ -268,7 +268,7 @@ export default {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            height: 15rem;
+            height: 16rem;
             color: #959595;
             
             .site-links {
@@ -276,6 +276,7 @@ export default {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
+                padding: 1rem 0;
             }
     
             h2 {
@@ -289,7 +290,7 @@ export default {
                 align-items: center;
     
                 img {
-                    height: 120%;
+                    height: 130%;
                 }
             }
         }
