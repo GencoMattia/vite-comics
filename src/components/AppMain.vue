@@ -1,5 +1,12 @@
 <script>
+import AppMainContent from "./AppMainContent.vue";
+
+
 export default {
+    components: {
+        AppMainContent,
+    },
+
     data() {
         return {
     
@@ -11,11 +18,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <section class="content">
-                <h2>
-                    --> Content goes here <--
-                </h2>
-            </section>
+            <AppMainContent />
         </div>
     </main>
 </template>
