@@ -115,8 +115,9 @@ export default {
                 height: 100%;
                 img {
                     width: 100%;
-                    height: 170px;
+                    aspect-ratio: 1/1;
                     object-fit: cover;
+                    object-position: top;
                     margin-bottom: .5rem;
                 }
             }
