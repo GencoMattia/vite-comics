@@ -1,5 +1,12 @@
 <script>
+import MainContentArticle from "./MainContentArticle.vue";
+
+
 export default {
+    components: { 
+        MainContentArticle 
+    },
+
     data() {
         return {
             articlesList: [
@@ -77,7 +84,7 @@ export default {
                 },
             ],
         };
-    }
+    },
 };
 </script>
 
@@ -85,12 +92,7 @@ export default {
     <section class="content">
         <ul class="article-list">
             <li v-for="(article, index) in articlesList" key="index">
-                <article class="comics-item">
-                    <img :src="article.thumb" :alt="article.thumb + '-img'">
-                    <p>
-                        {{ article.series }}
-                    </p>
-                </article>
+                <MainContentArticle :article="article" />
             </li>
         </ul>
     </section>
@@ -110,17 +112,6 @@ export default {
             width: calc(100% / 7);
             margin-right: 1rem;
             margin-bottom: 1rem;
-
-            article{
-                height: 100%;
-                img {
-                    width: 100%;
-                    aspect-ratio: 1/1;
-                    object-fit: cover;
-                    object-position: top;
-                    margin-bottom: .5rem;
-                }
-            }
         }
     }
 </style>
