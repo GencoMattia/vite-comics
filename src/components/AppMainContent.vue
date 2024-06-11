@@ -102,8 +102,23 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+
     section {
         padding: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            padding: .5rem 1rem;
+            background-color: $footer-blue;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
     }
 
     ul {

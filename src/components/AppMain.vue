@@ -21,6 +21,11 @@ export default {
 
         </div>
         <div class="container">
+            <div class="content-label">
+                <h2>
+                    Current Series
+                </h2>
+            </div>
             <AppMainContent />
         </div>
     </main>
@@ -28,6 +33,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
 
     main {
         background-color: #1c1c1c;
@@ -41,9 +47,22 @@ export default {
         }
         
         .container {
+            position: relative;
             width: 1200px;
-            // height: 7rem;
-            @include flex-centered()
+            @include flex-centered();
+            flex-direction: column;
+            align-items: start;
+
+            .content-label {
+                @include flex-centered();
+                position: relative;
+                height: 50px;
+                left: 0;
+                top: -25px;
+                background-color: $footer-blue;
+                text-transform: uppercase;
+                padding: .5rem 1rem;
+            }
         }
     }
 
