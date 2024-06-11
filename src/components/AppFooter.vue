@@ -328,6 +328,8 @@ export default {
 
                 .socials-list {
                     display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
                     color: #959595;
 
                     h2 {
@@ -337,6 +339,7 @@ export default {
 
                     ul {
                         display: flex;
+                        gap: 1rem;
                     }
                 }
             }
