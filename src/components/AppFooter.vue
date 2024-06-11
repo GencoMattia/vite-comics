@@ -268,7 +268,7 @@ export default {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            height: 16rem;
+            height: 20rem;
             color: #959595;
             
             .site-links {
@@ -277,11 +277,18 @@ export default {
                 flex-direction: column;
                 flex-wrap: wrap;
                 padding: 1rem 0;
-            }
-    
-            h2 {
-                color: white;
-                text-transform: uppercase;
+
+                h2 {
+                    color: white;
+                    text-transform: uppercase;
+                    margin-bottom: .5rem;
+                    font-size: 1.2rem;
+                }
+
+                li {
+                    margin-bottom: .2rem;
+                    font-size: .8rem;
+                }
             }
     
             .footer-logo {
