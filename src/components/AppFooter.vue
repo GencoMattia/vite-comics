@@ -143,31 +143,37 @@ export default {
                 {
                     id: 1,
                     name: "Facebook",
-                    icon: "../assets/img/footer-facebook"
+                    icon: "footer-facebook.png"
                 },
                 {
                     id: 2,
                     name: "Twitter",
-                    icon: "../assets/img/footer-twitter"
+                    icon: "footer-twitter.png"
                 },
                 {
                     id: 3,
                     name: "YouTube",
-                    icon: "../assets/img/footer-youtube"
+                    icon: "footer-youtube.png"
                 },
                 {
                     id: 4,
                     name: "Pinterest",
-                    icon: "../assets/img/footer-pinterest"
+                    icon: "footer-pinterest.png"
                 },
                 {
                     id: 5,
                     name: "Periscope",
-                    icon: "../assets/img/footer-periscope"
+                    icon: "footer-periscope.png"
                 },
             ],
         }
-    }
+    },
+
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
+        }
+    },
 }
 </script>
 
@@ -234,7 +240,7 @@ export default {
                         </h2>
                         <ul>
                             <li v-for="link in SocialList" key="id">
-                                <img :src="link.icon + '.png'" :alt="link.name + '-logo'">
+                                <img :src="getImagePath(link.icon)" :alt="link.name + '-img'">
                             </li>
                         </ul>
                     </div>
