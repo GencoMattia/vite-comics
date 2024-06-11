@@ -178,7 +178,7 @@ export default {
 </script>
 
 <template>
-    <Footer>
+    <footer>
         <div class="container">
             <section class="logo-links">
                 <nav class="site-links">
@@ -247,7 +247,7 @@ export default {
                 </nav>
             </div>
         </section>
-    </Footer>
+    </footer>
 </template>
 
 <style scoped lang="scss">

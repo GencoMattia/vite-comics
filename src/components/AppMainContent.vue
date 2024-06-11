@@ -95,6 +95,9 @@ export default {
                 <MainContentArticle :article="article" />
             </li>
         </ul>
+        <button class="load-more">
+            Load More
+        </button>
     </section>
 </template>
 
