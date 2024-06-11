@@ -105,7 +105,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
     section {
-        padding: 2rem 2rem 0 2rem;
+        padding: 0 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
